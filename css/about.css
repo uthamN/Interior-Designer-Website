@@ -1,0 +1,425 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient( rgba(200,200,200,1),white);
+    font-family: 'Abel', sans-serif;
+}
+a:hover{
+    cursor: pointer;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+.menuicon:hover{
+    cursor: pointer;
+}
+div.image{
+    background-attachment: fixed;
+    background-image: url(img/abtm.png);
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height:34em;
+}
+
+div.onpic{
+    position: absolute;
+    top: 36%;
+    left: 40%;
+    transform: translate(-30% , -50%);
+    font-size: 1.25em;
+    color: #222;
+}
+div.onpic ::after{
+    text-shadow: 0 0 2px white;
+    content:'ABOUT';
+    font-weight: 800;
+    font-size: 3em;
+}
+div.menuicon{
+    position:absolute;
+    height: 2em;
+    width: 2em;
+    top: 5%;
+    left: 87%;
+}
+div.menuicon span{
+    background: black;
+    position:absolute;
+    height: 2.25em;
+    width: 2.25em;
+    clip-path: polygon(50% 90%, 100% 50%, 100% 60%, 50% 100%, 0 60%, 0% 50%);
+}
+div.menu{
+    display:none;
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    z-index: 10;
+    opacity: 0.75;
+}
+div.two{
+    width:20em;
+    height:100%;
+    background: black;
+    margin-right: 0;
+    margin-left: auto;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    flex-direction: column;
+}
+div.two span{
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+div.two a{
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+div.two a:hover{
+    border-bottom: 2px solid white;
+}
+.arrow{
+    display: none;
+    width: 50px;
+    height: 40px;
+    background-color: grey;
+    opacity: 0.5;
+    font-size: large;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index:999;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid black;
+    color: black;
+}
+h1.quote{
+    margin-top: 3em ;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.abth2{
+    padding-top: 3em ;
+    text-align: center;
+}
+div.brief{
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.brief span{
+    padding: 0 1.5em 3em 1.5em;
+    max-width: 28em;
+    text-align: justify;
+}
+
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+div.team{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.team span{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+div.team span span{
+    width:16em ;
+    height: 16em;
+    overflow: hidden;
+    margin:1.5em 2em 1.5em 2em ;
+}
+.p1{
+    background: url();
+    max-width: 16em;
+    text-align: justify;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 8px 16px 2px rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background:linear-gradient( whitesmoke , grey) ;
+    color: black;
+    transform: rotateY(180deg);
+  }
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+h1{
+    margin-top: 2em ;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2em;
+}
+footer{
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 4em;
+}
+footer span{
+    padding: 0 2em 0 2em ;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+/*loader*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.loader-wrapper{
+    position: fixed;
+    z-index: 999999999999999999;
+    width: 100%;
+    height: 100%;
+    background: whitesmoke;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+div.mom{
+    position: relative;
+    width: 20em;
+    height: 20em;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+   
+}
+div.child1{
+    width: 20em;
+    height: 20em;
+    background: radial-gradient(white, grey, rgb(0, 0, 0));
+    clip-path: polygon(0 0, 0 50%, 50% 50%);   
+    animation: anim1 4s ease-in-out infinite;
+}
+@keyframes anim1{
+    0%{
+        clip-path: polygon(0 0, 0 50%, 50% 50%);
+    }
+    12.5%{
+        clip-path: polygon(0 0, 50% 0, 50% 50%);
+    }
+    25%{
+        clip-path: polygon(100% 0, 50% 0, 50% 50%);
+    }
+    37.5%{
+        clip-path: polygon(100% 0, 100% 50%, 50% 50%);
+    }
+    50%{
+        clip-path: polygon(100% 100%, 100% 50%, 50% 50%);
+    }
+    62.5%{
+        clip-path: polygon(100% 100%, 50% 100%, 50% 50%);
+        
+    }
+    75%{
+        clip-path: polygon(0 100%, 50% 100%, 50% 50%);
+    }
+    87.5%{
+        clip-path: polygon(0 100%, 0 50%, 50% 50%);
+    }
+    100%{
+        clip-path: polygon(0 0, 0 50%, 50% 50%);
+    }
+}
+div.child2{
+    width: 20em;
+    height: 20em;
+    background: radial-gradient(white, grey, rgb(0, 0, 0));
+    clip-path: polygon(0 0, 0 50%, 50% 50%);   
+    animation: anim2 4s ease-in-out infinite;
+    margin-top: -20em;
+}
+@keyframes anim2{
+    0%{
+        clip-path: polygon(100% 0, 50% 0, 50% 50%);
+    }
+    12.5%{
+        clip-path: polygon(100% 0, 100% 50%, 50% 50%);
+    }
+    25%{
+        clip-path: polygon(100% 100%, 100% 50%, 50% 50%);
+    }
+    37.5%{
+        clip-path: polygon(100% 100%, 50% 100%, 50% 50%);
+        
+    }
+    50%{
+        clip-path: polygon(0 100%, 50% 100%, 50% 50%);
+    }
+    62.5%{
+        clip-path: polygon(0 100%, 0 50%, 50% 50%);
+    }
+    75%{
+        clip-path: polygon(0 0, 0 50%, 50% 50%);
+    }
+    87.5%{
+        clip-path: polygon(0 0, 50% 0, 50% 50%);
+    }
+    100%{
+        clip-path: polygon(100% 0, 50% 0, 50% 50%);
+    }
+}
+div.child3{
+    width: 20em;
+    height: 20em;
+    background: radial-gradient(white, grey, rgb(0, 0, 0));
+    clip-path: polygon(0 0, 0 50%, 50% 50%);   
+    animation: anim3 4s ease-in-out infinite;
+    margin-top: -20em;
+}
+@keyframes anim3{
+    0%{
+        clip-path: polygon(100% 100%, 100% 50%, 50% 50%);
+    }
+    12.5%{
+        clip-path: polygon(100% 100%, 50% 100%, 50% 50%);
+        
+    }
+    25%{
+        clip-path: polygon(0 100%, 50% 100%, 50% 50%);
+    }
+    37.5%{
+        clip-path: polygon(0 100%, 0 50%, 50% 50%);
+    }
+    50%{
+        clip-path: polygon(0 0, 0 50%, 50% 50%);
+    }
+    62.5%{
+        clip-path: polygon(0 0, 50% 0, 50% 50%);
+    }
+    75%{
+        clip-path: polygon(100% 0, 50% 0, 50% 50%);
+    }
+    87.5%{
+        clip-path: polygon(100% 0, 100% 50%, 50% 50%);
+    }
+    100%{
+        clip-path: polygon(100% 100%, 100% 50%, 50% 50%);
+    }
+}
+div.child4{
+    width: 20em;
+    height: 20em;
+    background: radial-gradient(white, grey, rgb(0, 0, 0));
+    clip-path: polygon(0 0, 0 50%, 50% 50%);   
+    animation: anim4 4s ease-in-out infinite;
+    margin-top: -20em;
+}
+@keyframes anim4{
+    0%{
+        clip-path: polygon(0 100%, 50% 100%, 50% 50%);
+    }
+    12.5%{
+        clip-path: polygon(0 100%, 0 50%, 50% 50%);
+    }
+    25%{
+        clip-path: polygon(0 0, 0 50%, 50% 50%);
+    }
+    37.5%{
+        clip-path: polygon(0 0, 50% 0, 50% 50%);
+    }
+    50%{
+        clip-path: polygon(100% 0, 50% 0, 50% 50%);
+    }
+    62.5%{
+        clip-path: polygon(100% 0, 100% 50%, 50% 50%);
+    }
+    75%{
+        clip-path: polygon(100% 100%, 100% 50%, 50% 50%);
+    }
+    87.5%{
+        clip-path: polygon(100% 100%, 50% 100%, 50% 50%);
+    }
+    100%{
+        clip-path: polygon(0 100%, 50% 100%, 50% 50%);
+    }
+}
