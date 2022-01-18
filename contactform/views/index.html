@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="css/img/icon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="./main.js"></script>  
+    <script>
+       
+    </script>    
+</head>
+<body style="background: #aaa;">
+    <span class="back" style="display: flex; align-items: center; justify-content: center; width: 2.5em; height: 2.5em;border: 2px solid black; background: #999; margin: 1em;">
+        <a href="javascript:history.back()" style="text-align: center; text-decoration: none; color: black;">Go Back</a>
+    </span>
+    <div class="contact-form" >
+        
+    <h1>Contact Us</h1>
+    <form action="/" method="POST">
+        <div class="txtb">
+        <label for="fname">First Name:
+            <input type="fname" name="fname" class="fname" placeholder="Enter Your First Name" required>
+        </label>
+        </div>
+        <div class="txtb">
+        <label for="lname">Last Name:
+            <input type="lname" name="lname" class="lname" placeholder="Enter Your Last Name" required>
+        </label> 
+        </div>  
+        <div class="txtb">
+        <label for="number">Phone Number:
+            <input type="number" name="number" class="number" placeholder="Enter Your Phone Number" required>
+        </label>
+        </div>
+        <div class="txtb">
+        <label for="email">E-mail:
+            <input type="email" name="email" class="email" placeholder="Enter Your E-mail" required> 
+        </label>
+        </div>
+        <div class="txtb">
+        <label for="message">Message:
+            <textarea name="message" class="message" placeholder="Enter Your Message"></textarea required>
+        </label>
+        </div>
+        <div class="status">
+        </div>
+        <label>     
+            <button id="button" name="submit" class="btn" >
+                Submit</button>           
+        </label>
+    </form>
+    </div>     
+</body>
+</html>
